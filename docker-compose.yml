@@ -1,0 +1,9 @@
+version: '3'
+services:
+    uart_output:
+        build: .
+        image: mikoto2000/aarch64
+        volumes:
+            - ./:/work
+        working_dir: /work/uart_output
+
